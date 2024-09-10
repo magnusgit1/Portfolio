@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magnus Hissingby - Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -27,7 +28,6 @@
           <a class="topmenu" href="#about-me"><u>About Me</u></a>
           <a class="topmenu" href="#skills"><u>Skills</u></a>
           <a class="topmenu" href="#projects"><u>Projects</u></a>
-          <a class="topmenu" href="#recommendations"><u>Recommendations</u></a>
           <!-- Add the links for Skills, Projects and Recommendation here -->
 
         </div>
@@ -103,12 +103,40 @@
                 <h4>Project5</h4>
             </div>
         </div>
-        <div>
-            <button class="floatingbutton" type="home"></button>
-        </div>
+        
     </section>
+
+    <section id="communication">
+        <div>
+            <h2>Contact me directly</h2>
+            <div style="clear:both;"></div>
+        </div>
+        <div id="form" class="container">
+            <form method="post" id="comms" action="https://formspree.io/f/meojwjrw">
+                <div class="user-input">
+                    <h5>Contact me directly using your email</h5>
+                    
+                    <label for="message">Message</label><br>
+                    <textarea rows="10" name="message-area" id="message-area" placeholder="Write your message here!" required></textarea><br>
+                </div>
+                <br><button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div id="thank-you-message" style="display:none;">
+            <h6>Thanks for your message!</h6>
+            <p>I will respond as fast as i can.<br>
+                - Magnus</p>
+        </div>
+
+
+    </section>
+
+    <button id="home-button" class="floating-button" onclick="scrollToTop()">
+        <img src="https://cdn-icons-png.flaticon.com/512/5974/5974636.png" class="home-icon"/>
+    </button>
+    <script src="fun.js"></script>
     </body>
-    </html>
+</html>
 
 
 
