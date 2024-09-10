@@ -1,5 +1,5 @@
 body {
-    font-family:sans-serif;
+    font-family:serif;
   }
   
   /* Navigation Bar */
@@ -114,11 +114,11 @@ h2 {
     font-size: 50px;
     text-align: center;
     float: left;
-    color: #7600bc;
+    color: #4c5fd6;
     margin: 30px;
     margin-left: 60px;
     margin-top: 40px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
 
 .all-projects{
@@ -134,7 +134,7 @@ h2 {
     text-align:center;
     margin:35px;
     padding:5px;
-    margin-top:2cm;
+    margin-top:1cm;
     width:2in;
     font-size:20px;
     box-shadow: 0 3px 10px gray;
@@ -177,7 +177,9 @@ h2 {
 
 .user-input h5{
     text-align:center;
-    font-size:15px;
+    font-size:13px;
+    margin-bottom:15px;
+    margin-right:10px;
 }
 
 .user-input{
@@ -185,6 +187,17 @@ h2 {
     width:100%;
 }
 button[type="submit"]{
-    margin-top:10px;
+    margin-top:3cm;
+    height:3cm;
+}
+
+#communication{
+    margin-bottom:1cm;
+}
+
+#thank-you-message{
+    text-align:center;
+    display:flex;
+    font-size:14px;
     
 }

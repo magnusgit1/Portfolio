@@ -50,6 +50,7 @@ document.getElementById("comms").addEventListener('submit', function(event){
     }).then(response => {
         if(response.ok) {
             form.reset();
+        
             document.getElementById('thank-you-message').style.display = 'block';
         } else{
             response.json().then(data => {
