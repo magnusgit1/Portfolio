@@ -1,11 +1,11 @@
 body {
     font-family:serif;
-  }
-  
+}
+
   /* Navigation Bar */
   
   #home {
-    background-color:  #4c5fd6;
+    background-color:  #708ce0;
     padding-bottom: 1cm;
     margin-left:-1cm;
     margin-right:-1cm;
@@ -13,13 +13,14 @@ body {
     padding-top: 2cm;
     padding-bottom: 3cm;
     height: 5mm;
+    box-shadow: 1px 1px 5px black;
    }
   
   .topmenu {
     color: lightgray;
     margin: 10px;
     padding: 20px;
-    font-size: 20px;
+    font-size: 24px;
     text-decoration:none;
   }
   
@@ -110,6 +111,8 @@ body {
   } 
 
 h2 {
+    text-shadow:1px 1px 4px rgba(0, 0, 0, 0.3);
+    text-decoration: underline;
     text-align: justify;
     font-size: 50px;
     text-align: center;
@@ -125,7 +128,7 @@ h2 {
     display:flex;
     flex-direction: row;
     flex-flow:wrap;
-    margin-left:25px;
+    align-items:center;
 }
 .project{
     border: 1px solid grey;
@@ -135,9 +138,33 @@ h2 {
     margin:35px;
     padding:5px;
     margin-top:1cm;
-    width:2in;
+    width:80%;
     font-size:20px;
     box-shadow: 0 3px 10px gray;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+.project-details{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:max-height 1s ease, opacity 0.5s ease;
+}
+
+.project-details.show{
+    max-height:1000px;
+    opacity: 1;
+}
+
+.detail-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.detail-item.show{
+    opacity:1;
+    transform: translateY(0);
 }
 .floating-button{
     position: fixed;
@@ -200,4 +227,25 @@ button[type="submit"]{
     display:flex;
     font-size:14px;
     
+}
+
+footer{
+    background-color: #708ce0;
+    height:2cm;
+    margin-bottom:-1cm;
+    margin-left:-1cm;
+    margin-right:-1cm;
+    border: 2px solid black;
+    box-shadow: 1px 1px 5px black;
+}
+
+#fp, #fa{
+    text-align:center;
+    font-size:18px;
+    padding-top:12px;
+    display:block;
+    margin:0 auto;
+}
+#fa:hover{
+    color:white;
 }

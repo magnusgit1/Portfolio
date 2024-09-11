@@ -87,8 +87,15 @@
             <div style="clear:both;"></div>
         </div>
         <div class="all-projects">
-            <div class="project">
+            <div class="project" onclick="toggleDetails(this)">
                 <h4>Project1</h4>
+                <div class="project-details">
+                    <ul id="project-detail-list">
+                        <li class="detail-item">Technologies used: </li>
+                        <li class="detail-item">Time spent: </li>
+                        <li class="detail-item">What i learned: </li>
+                    </ul>
+                </div>
             </div>
             <div class="project">
                 <h4>Project2</h4>
@@ -125,9 +132,17 @@
         </div>
         <div id="thank-you-message" style="display:none;">
             <h6 style="font-size:14px;">Thanks for your message!</h6>
-            <p style="font-size:14px;">I will respond as fast as i can.<br>
+            <p style="font-size:14px;">I will read it as soon as possible.<br>
                 - Magnus</p>
         </div>
+
+
+    </section>
+
+    <footer id="footer">
+        <p id="fp">Thanks for viewing my page!</p>
+        <a id="fa" href="https://github.com/magnusgit1">My GitHub</a>
+    </footer>
 
 
     </section>

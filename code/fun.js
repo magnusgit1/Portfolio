@@ -63,3 +63,19 @@ document.getElementById("comms").addEventListener('submit', function(event){
         alert('An error occured when trying to send the message.');
     });
 });
+
+// prosjekt-objekt smooth transitioning mellom elementene
+function toggleDetails(project){
+    const details = project.querySelector('.project-details');
+    details.classList.toggle('show');
+    const detailItems = details.querySelectorAll('.detail-item');
+    detailItems.forEach((item, index) => {
+        if(details.classList.contains('show')){
+            setTimeout(() => {
+                item.classList.add('show');
+            }, index*200);
+        } else{
+            item.classList.remove('show');
+        }
+    });
+}
