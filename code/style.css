@@ -5,7 +5,11 @@ body {
   /* Navigation Bar */
   
   #home {
-    background-color:  #708ce0;
+    background: linear-gradient(135deg, #b5ceda 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, #b5ceda 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, #b5ceda 25%, transparent 25%),
+    linear-gradient(45deg, #b5ceda 25%, transparent 25%);
+    background-size: 100px 100px; /* Adjust the size based on the pattern */
     padding-bottom: 1cm;
     margin-left:-1cm;
     margin-right:-1cm;
@@ -17,7 +21,7 @@ body {
    }
   
   .topmenu {
-    color: lightgray;
+    color: black;
     margin: 10px;
     padding: 20px;
     font-size: 24px;
@@ -25,7 +29,7 @@ body {
   }
   
   .topmenu:hover {
-    color: white;
+    color: black;
     font-weight: bolder;
     text-decoration: underline;
     /* Add the styles here */
@@ -230,13 +234,17 @@ button[type="submit"]{
 }
 
 footer{
-    background-color: #708ce0;
-    height:2cm;
+    background: linear-gradient(135deg, #b5ceda 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, #b5ceda 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, #b5ceda 25%, transparent 25%),
+    linear-gradient(45deg, #b5ceda 25%, transparent 25%);
+    background-size: 100px 100px; /* Adjust the size based on the pattern */
+    height:4cm;
     margin-bottom:-1cm;
     margin-left:-1cm;
     margin-right:-1cm;
-    border: 2px solid black;
-    box-shadow: 1px 1px 5px black;
+    border-top: 1px solid black;
+    box-shadow: 1px 1px 1px black;
 }
 
 #fp, #fa{
