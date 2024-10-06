@@ -1,53 +1,89 @@
-body {
+
+body, html {
     font-family:serif;
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
 }
 
-  /* Navigation Bar */
+body nav{
+    width:100%;
+}
+
+hr{
+    width:90%;
+    height:2px;
+    background-color:black;
+    margin-bottom:50px;
+}
+
+.main-page{
+    margin:0;
+    width:100%;
+    
+    --s: 201px; /* control the size*/
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+    
+    background:
+        repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+        calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+        repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s)*0.577);
+
+    display:flex;
+    justify-content: center;
+}
+
+.main-page-inner{
+    box-shadow: 1px 1px 100px black;
+    width:70%;
+    background-color:white;
+    border-radius: 20px;
+    padding-top:20px;
+    margin-top:50px;
+    padding:30px;
+    margin-bottom:45px;
+    text-align:center;
+}
   
-  #home {
-    background: linear-gradient(135deg, #b5ceda 25%, transparent 25%) -50px 0,
-    linear-gradient(225deg, #b5ceda 25%, transparent 25%) -50px 0,
-    linear-gradient(315deg, #b5ceda 25%, transparent 25%),
-    linear-gradient(45deg, #b5ceda 25%, transparent 25%);
-    background-size: 100px 100px; /* Adjust the size based on the pattern */
-    padding-bottom: 1cm;
-    margin-left:-1cm;
-    margin-right:-1cm;
-    margin-top:-1cm;
-    padding-top: 2cm;
+#home {
+    background: linear-gradient(to bottom, rgba(16, 42, 213, 0.8), rgba(16, 42, 213, 0)); /* Fader fra farge til transparent */
+    padding-top: 1cm;
     padding-bottom: 3cm;
     height: 5mm;
-    box-shadow: 1px 1px 5px black;
-   }
+    width: 100%;
+    box-shadow: 1px 1px 10px black;
+}
   
-  .topmenu {
+.topmenu {
     color: black;
-    margin: 10px;
     padding: 20px;
+    padding-right:40px;
     font-size: 24px;
     text-decoration:none;
-  }
+}
   
-  .topmenu:hover {
+.topmenu:hover {
     color: black;
     font-weight: bolder;
     text-decoration: underline;
-    /* Add the styles here */
-  }
 
-  .topdiv {
+}
+
+.topdiv {
     float: right;
-    padding-right: 1cm;
-  }
+}
   
-  .profile_name {
+.profile_name {
     float: left;
     padding-left: 2cm;
     margin-bottom:10px;
     color: black;
     font-size:35px;
-    /* Add the styles here */
-  }
+}
   
 .profile_name .contact_info {
     font-size: 16px;
@@ -57,11 +93,10 @@ body {
     flex-direction: row;
 }
   
-  .contact_info img {
+.contact_info img {
     width:25px;
     margin-right: 10px;
     float:left;
-
 }
 
 #mailimg, #phoneimg{
@@ -70,26 +105,46 @@ body {
 }
 
 .container{
-    margin-left:60px;
-    margin-top:50px;
+    margin:15px;
+    padding-top:100px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    width:100%;
+
 }
 
 .container img{
-    float:right;
-    padding-right:5cm;
-    padding-top:2cm;
-    width:350px;
+    mix-blend-mode: multiply;
+    width:100%;
+}
+
+
+.about-me-text{
+    background-color:#9eb8e6;
+    box-shadow: 1px 1px 20px black;
+    padding:20px;
+    font-size:20px;
+    text-align:center;
+    border-radius: 20px;
+    height:30%;
 }
 
 .about-me{
     display:flex;
 }
 
+#skills{
+    margin-top:-20px;
+}
+
 .all-skills{
     display:flex;
     flex-direction: row;
     flex-flow:wrap;
-    margin-left:25px;
+    justify-content: center;
 }
 
 .skill{
@@ -115,24 +170,18 @@ body {
   } 
 
 h2 {
-    text-shadow:1px 1px 4px rgba(0, 0, 0, 0.3);
-    text-decoration: underline;
-    text-align: justify;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.3);
     font-size: 50px;
-    text-align: center;
-    float: left;
-    color: #4c5fd6;
+    color: #000000;
     margin: 30px;
-    margin-left: 60px;
     margin-top: 40px;
-    margin-bottom: 20px;
   }
 
 .all-projects{
     display:flex;
     flex-direction: row;
     flex-flow:wrap;
-    align-items:center;
+    justify-content: center;
 }
 .project{
     border: 1px solid grey;
@@ -142,11 +191,15 @@ h2 {
     margin:35px;
     padding:5px;
     margin-top:1cm;
-    width:80%;
+    width:60%;
     font-size:20px;
     box-shadow: 0 3px 10px gray;
     cursor:pointer;
     overflow:hidden;
+}
+
+.project:hover{
+    box-shadow:1px 1px 30px black;
 }
 
 .project-details{
@@ -157,8 +210,15 @@ h2 {
 }
 
 .project-details.show{
-    max-height:1000px;
+    max-height:1500px;
     opacity: 1;
+}
+
+.detail-item{
+    padding:10px;
+    text-align: left;
+    float:left;
+    width:100%;
 }
 
 .detail-item {
@@ -182,6 +242,7 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .floating-button:hover{
     box-shadow:3px 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -191,10 +252,10 @@ h2 {
 }
 
 #form{
-    margin-top:100px;
     display:flex;
     justify-content: center;
     align-items:center;
+    margin-top:-20px;
 }
 
 #comms{
@@ -202,15 +263,15 @@ h2 {
 }
 
 #message-area{
-    width:500px;
-    margin:5px;
+    width:100%;
+    margin-top:5px;
+    resize:vertical;
 }
 
 .user-input h5{
     text-align:center;
     font-size:13px;
     margin-bottom:15px;
-    margin-right:10px;
 }
 
 .user-input{
@@ -220,10 +281,11 @@ h2 {
 button[type="submit"]{
     margin-top:3cm;
     height:3cm;
+    margin-left:5px;
 }
 
 #communication{
-    margin-bottom:1cm;
+    padding-bottom:1cm;
 }
 
 #thank-you-message{
@@ -233,26 +295,22 @@ button[type="submit"]{
     
 }
 
-footer{
-    background: linear-gradient(135deg, #b5ceda 25%, transparent 25%) -50px 0,
-    linear-gradient(225deg, #b5ceda 25%, transparent 25%) -50px 0,
-    linear-gradient(315deg, #b5ceda 25%, transparent 25%),
-    linear-gradient(45deg, #b5ceda 25%, transparent 25%);
-    background-size: 100px 100px; /* Adjust the size based on the pattern */
-    height:4cm;
-    margin-bottom:-1cm;
-    margin-left:-1cm;
-    margin-right:-1cm;
+footer {
+    background: linear-gradient(to top, #abb1dd, rgba(171, 177, 221, 0));
+    height: 3cm;
+    padding-top:10px;
+    width: 100%;
+    font-weight: bolder;
     border-top: 1px solid black;
     box-shadow: 1px 1px 1px black;
+    text-align: center;
 }
 
 #fp, #fa{
-    text-align:center;
     font-size:18px;
     padding-top:12px;
-    display:block;
     margin:0 auto;
+    padding-bottom:10px;
 }
 #fa:hover{
     color:white;

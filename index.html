@@ -28,116 +28,205 @@
           <a class="topmenu" href="#about-me"><u>About Me</u></a>
           <a class="topmenu" href="#skills"><u>Skills</u></a>
           <a class="topmenu" href="#projects"><u>Projects</u></a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-
         </div>
       </div>    
     </nav>
-    <!--About me-->
-    <section id="about-me" class="container">
-        <div>
-            <img src="https://static.vecteezy.com/system/resources/previews/026/530/349/original/anonymous-person-silhouette-icon-vector.jpg" width="100px"/>
-        </div>
-        <div>
-            <h1>Hey, my name is Magnus!</h1>
-            <p>I am currently a student at the university of Oslo, enrolled in a bachelor's degree in Computer Science/Informatics.<br>
-                From a young age i have always been interested in technology and computers, thus leading me to pursue this interest in my academical journey.
-                I have learned to love the challenges and complexity of coding and programming, and i am always eager to learn more. Up until today
-                i have mostly been using Java, Python, Javascript and SQL, learning the beauty of object-oriented programming. I have written everything from simple- to
-                more advanced algorithms, and i have learned how to develop simple applications with GUI in Java, Flask in Python and React in Javascript - as well as utilizing API's
-                to connect and retrieve data to databases through MySQL and postgreSQL. Furthermore, i have been developing my understanding of front-end and back-end
-                development through taking courses and online certificates in parallell with my degree, where i've been acquainted with technologies and languages such as:
-                HTML, CSS, Kubernets, Dockers, Containers, Cloud technologies such as AWP and Azure, React, NodeJS and much more. Where as i may not be an expert
-                in all of these fields, i always find enjoyment in learning new technologies and languages, further expanding my skillset. 
-            </p>
-        </div>
-    </section>
-    <section id="skills">
-        <div>
-            <h2 style="margin-bottom:1.5cm; margin-top:3cm;">Skills</h2>
-            <div style="clear:both;"></div>
-        <div>
-        <div class="all-skills">
-            <div class="skill">
-                <img src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=1920%2C1920&ssl=1" width="50px" />
-                <h6>Python</h6>
-            </div>
-            <div class="skill">
-                <img src="https://crowdforthink.com/assets/uploads/blogs/582d8348873b7e0fdfaa78320dd3b918.jpg"/>
-                <h6>Java</h6>
-            </div>
-            <div class="skill">
-                <img src="https://media.licdn.com/dms/image/D4E12AQFfe1nZbaWdMw/article-cover_image-shrink_720_1280/0/1698604163003?e=2147483647&v=beta&t=rtD52hfy37nFVmc4_MXfnflV6C-ke773W70SYJLoWRc" width="50px"/>
-                <h6>Javascript</h6>
-            </div>
-            <div class="skill">
-                <img src="https://www.caba.in/wp-content/uploads/2020/03/f97c66df-html-course.jpg" width="50px"/>
-                <h6>HTML/CSS</h6>
-            </div>
-            <div class="skill">
-                <img src="https://i0.wp.com/futuresolutionsonline.co.uk/wp-content/uploads/2023/04/mySQL-logo.png?fit=300%2C300&ssl=1" width="50px"/>
-                <h6>MySQL</h6>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div>   
-            <h2 style="margin-top:3cm; margin-bottom:1.5cm;">Projects</h2>
-            <div style="clear:both;"></div>
-        </div>
-        <div class="all-projects">
-            <div class="project" onclick="toggleDetails(this)">
-                <h4>Project1</h4>
-                <div class="project-details">
-                    <ul id="project-detail-list">
-                        <li class="detail-item">Technologies used: </li>
-                        <li class="detail-item">Time spent: </li>
-                        <li class="detail-item">What i learned: </li>
-                    </ul>
+    <div class="main-page">
+        <div class="main-page-inner">
+            <h1 style="text-shadow:1px 1px 1px black; font-size:50px;">Portfolio</h1>
+            <hr></hr>
+            <section id="about-me" class="container">
+                <div class="about-me-text">
+                    <h1>Hey, my name is Magnus!</h1>
+                    <p> I am currently a student at the University of Oslo, enrolled in a bachelor's degree in Computer Science/Informatics.
+                        This (fairly simplistic) portfolio is an addition to my resumé, showcasing some of the skills i have aquired up until this point, as well
+                        as referring to some of the projects that i have created in parallel with my degree. <br></br>
+                    </p>
                 </div>
-            </div>
-            <div class="project">
-                <h4>Project2</h4>
-            </div>
-            <div class="project">
-                <h4>Project3</h4>
-            </div>
-            <div class="project">
-                <h4>Project4</h4>
-            </div>
-            <div class="project">
-                <h4>Project5</h4>
-            </div>
-        </div>
-        
-    </section>
-
-    <section id="communication">
-        <div>
-            <h2 style="margin-bottom:-1.5cm; margin-top:3cm;">Contact me directly</h2>
-            <div style="clear:both;"></div>
-        </div>
-        <div id="form" class="container">
-            <form method="post" id="comms" action="https://formspree.io/f/meojwjrw">
-                <div class="user-input">
-                    <h5 style="font-style:italic; font-size:14px;">Providing and submitting a message in the field below <br> 
-                    will automatically send me an email utilizing a third party application. </h5>
-                    
-                    <label for="message">Message</label><br>
-                    <textarea rows="10" name="message-area" id="message-area" placeholder="Write your message here!" required></textarea><br>
+                <div class="about-me-img">
+                    <img src="https://static.vecteezy.com/system/resources/previews/026/530/349/original/anonymous-person-silhouette-icon-vector.jpg" width="400px"/>
                 </div>
-                <br><button type="submit">Send Message</button>
-            </form>
-        </div>
-        <div id="thank-you-message" style="display:none;">
-            <h6 style="font-size:14px;">Thanks for your message!</h6>
-            <p style="font-size:14px;">I will read it as soon as possible.<br>
-                - Magnus</p>
-        </div>
+            </section>
+            <section id="skills">
+                <div>
+                    <h2 style="margin-bottom:1.5cm; margin-top:3cm; font-size:50px;">Skills</h2>
+                    <hr style="width:70%; margin-top:-30px; "></hr>
+                    <div style="clear:both;"></div>
+                <div>
+                <div class="all-skills">
+                    <div class="skill">
+                        <img src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=1920%2C1920&ssl=1" width="50px" />
+                        <h6>Python</h6>
+                    </div>
+                    <div class="skill">
+                        <img src="https://crowdforthink.com/assets/uploads/blogs/582d8348873b7e0fdfaa78320dd3b918.jpg"/>
+                        <h6>Java</h6>
+                    </div>
+                    <div class="skill">
+                        <img src="https://media.licdn.com/dms/image/D4E12AQFfe1nZbaWdMw/article-cover_image-shrink_720_1280/0/1698604163003?e=2147483647&v=beta&t=rtD52hfy37nFVmc4_MXfnflV6C-ke773W70SYJLoWRc" width="50px"/>
+                        <h6>Javascript</h6>
+                    </div>
+                    <div class="skill">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlGmKtrnxElpqw3AExKXPWWBulcwjlvDJa1Q&s"/>
+                        <h6>React.js</h6>
+                    </div>
+                    <div class="skill">
+                        <img src="https://www.caba.in/wp-content/uploads/2020/03/f97c66df-html-course.jpg" width="50px"/>
+                        <h6>HTML/CSS</h6>
+                    </div>
+                    <div class="skill">
+                        <img src="https://download.logo.wine/logo/PostgreSQL/PostgreSQL-Logo.wine.png" width="50px"/>
+                        <h6>PostgreSQL</h6>
+                    </div>
+                    <div class="skill">
+                        <img src="https://storage.caktusgroup.com/media/blog-images/drf-logo2.png" width="50px"/>
+                        <h6>Django</h6>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="projects">
+                <div>   
+                    <h2 style="margin-top:3cm; margin-bottom:1.5cm; font-size: 50px;">Projects</h2>
+                    <hr style="width:70%; margin-top:-30px; "></hr>
+                    <div style="clear:both;"></div>
+                </div>
+                <div class="all-projects">
+                    <div class="project" onclick="toggleDetails(this)">
+                        <h4>Quiz-game application</h4>
+                        <div class="project-details">
+                            <div class="project-header">
+                                <img src="./imgs/quiz-game-img.png" width="100%" style="padding:5px;" alt="Project Image" class="project-image">
+                                <a href="https://magnusgit1.github.io/quiz-game/" class="github-link">View on GitHub Pages</a>
+                                <br>
+                                <a href="https://github.com/magnusgit1/quiz-game" class="github-link">View code on GitHub</a>
+                            </div>
+                            <ul class="project-detail-list">
+                                <li class="detail-item"><strong>Technologies used:</strong> <br>
+                                    <ul style="padding:5px;">
+                                        <li>React.js w/CSS</li>
+                                        <li>Python w/Django</li>
+                                        <li>PostgreSQL</li>
+                                    </ul>
+                                </li>
+                                <li class="detail-item"><strong>Time spent:</strong> 2-3 weeks</li>
+                                <li class="detail-item" style="width:90%;"><strong>Description/Experience:</strong> <br> <br>
+                                    A simple, yet thorough quiz-game-application, which allows players to play both
+                                    offline and online. The app is configured with server-side logic through Django,
+                                    allowing secure registration and login for users, with passwords encrypted in the database.
 
-
-    </section>
+                                    This is my most recent project, and the leap from creating small HTML/CSS and Javascript-based websites, to an actual functional
+                                    application with login, register and game-logic was definetely challenging, but utilizing online resources 
+                                    and docs helped tremendously.
+                                    
+                                    The application is now up and running through Github-pages (link above), with both the server-api's and database 
+                                    deployed externally using Render. NB: The app may be slow due to using Render's free services.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project" onclick="toggleDetails(this)">
+                        <h4>Game Of Life</h4>
+                        <div class="project-details">
+                            <div class="project-header">
+                                <img src="./imgs/GUI.png" width="100%" style="padding:5px;" alt="Project Image" class="project-image">
+                                <a href="https://github.com/magnusgit1/game-of-life" class="github-link">View code on GitHub</a>
+                            </div>
+                            <ul class="project-detail-list">
+                                <li class="detail-item"><strong>Technologies used:</strong><br>
+                                    <ul style="padding:5px;">
+                                        <li>Java</li>
+                                    </ul>
+                                </li>
+                                <li class="detail-item"><strong>Time spent:</strong>approx. 3 days</li>
+                                <li class="detail-item" style="width:90%;"><strong>Description/Experience:</strong> <br> <br>
+                                    This Java program was coded during my 3rd semester at school related to a 
+                                    Object-oriented programming course. It consists of a simple game called Game of Life,
+                                    where nodes, represented as cells, are either dead or alive in the next "generation" 
+                                    depending on the number of alive neighbors. One of the programs
+                                    uses a GUI-implementation with visual representations, while the other interacts with the user 
+                                    and displays the game in the command-line - both using the same logic. This was a small milestone
+                                    for me in my Java-journey, where i started to understand all the concepts around OOP, classes and compilers.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project" onclick="toggleDetails(this)">
+                        <h4>Search-Algorithms</h4>
+                        <div class="project-details">
+                            <div class="project-header">
+                                <img src="./imgs/quiz-game-img.png" width="100%" style="padding:5px;" alt="Project Image" class="project-image">
+                                <a href="https://github.com/magnusgit1/Search-Algorithms" class="github-link">View code on Github</a>
+                            </div>
+                            <ul class="project-detail-list">
+                                <li class="detail-item"><strong>Technologies used:</strong> <br>
+                                    <ul style="padding:5px;">
+                                        <li>Python w/matplotlib</li>
+                                    </ul>
+                                </li>
+                                <li class="detail-item"><strong>Time spent:</strong>Approx. 4 days</li>
+                                <li class="detail-item" style="width:90%;"><strong>Description/Experience:</strong> <br> <br>
+                                    As part of an introductory course in AI and machine learning, we had some tasks revolved
+                                    around searching. We then implemented the fairly well-known algorithms Exhaustive-search,
+                                    Hillclimber and a Generic Algorithm, utilized in the context of a Traveling-Salesman Problem.
+                                    In short terms, these algorithms tries to find the shortest possible single-route path amongst a set number of cities geographically.
+                                    They all use different kind of logic to solve the problem, and i quickly learned the valuability of 
+                                    effectiveness in algorithms, and how exponential growth can be a severe issue.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project" onclick="toggleDetails(this)">
+                        <h4>Graph-algorithm</h4>
+                        <div class="project-details">
+                            <div class="project-header">
+                                <img src="./imgs/quiz-game-img.png" width="100%" style="padding:5px;" alt="Project Image" class="project-image">
+                                <a href="https://magnusgit1.github.io/quiz-game/" class="github-link">View on GitHub Pages</a>
+                            </div>
+                            <ul class="project-detail-list">
+                                <li class="detail-item"><strong>Technologies used:</strong> <br>
+                                    <ul style="padding:5px;">
+                                        <li>FILL</li>
+                                    </ul>
+                                </li>
+                                <li class="detail-item"><strong>Time spent:</strong>FILL</li>
+                                <li class="detail-item" style="width:90%;"><strong>Description/Experience:</strong> <br> <br>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+    
+            <section id="communication">
+                <div>
+                    <h2 style="margin-top:3cm; color:black; font-size: 30px; font-style:italic;">Contact me directly</h2>
+                    <hr style="width:70%; margin-top:-10px;"></hr>
+                    <div style="clear:both;"></div>
+                </div>
+                <div id="form" class="container">
+                    <form method="post" id="comms" action="https://formspree.io/f/meojwjrw">
+                        <div class="user-input">
+                            <h5 style="font-style:italic; font-size:14px;">Providing and submitting a message in the field below <br> 
+                            will automatically send me an email utilizing a third party application. </h5>
+                            
+                            <label for="message">Message</label><br>
+                            <textarea rows="10" name="message-area" id="message-area" placeholder="Write your message here!" required></textarea><br>
+                        </div>
+                        <br><button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div id="thank-you-message" style="display:none;">
+                    <h6 style="font-size:14px;">Thanks for your message!</h6>
+                    <p style="font-size:14px;">I will read it as soon as possible.<br>
+                        - Magnus</p>
+                </div>
+    
+    
+            </section>
+        </div>
+    </div>
 
     <footer id="footer">
         <p id="fp">Thanks for viewing my page!</p>
