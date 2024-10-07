@@ -39,8 +39,10 @@
                 <div class="about-me-text">
                     <h1>Hey, my name is Magnus!</h1>
                     <p> I am currently a student at the University of Oslo, enrolled in a bachelor's degree in Computer Science/Informatics.
-                        This (fairly simplistic) portfolio is an addition to my resumé, showcasing some of the skills i have aquired up until this point, as well
-                        as referring to some of the projects that i have created in parallel with my degree. <br></br>
+                        This (fairly simplistic) portfolio is an addition to my resumé, showcasing some of the skills i have aquired up until this point, while also presenting some of the 
+                        projects that i have created. <br><br>
+                        Apart from school and projects, i am also currently working towards a full-stack developer certificate from IBM - to further develop my technical skills.
+                         <br></br>
                     </p>
                 </div>
                 <div class="about-me-img">
@@ -97,9 +99,9 @@
                         <div class="project-details">
                             <div class="project-header">
                                 <img src="./imgs/quiz-game-img.png" width="100%" style="padding:5px;" alt="Project Image" class="project-image">
-                                <a href="https://magnusgit1.github.io/quiz-game/" class="github-link">View on GitHub Pages</a>
+                                <a href="https://magnusgit1.github.io/quiz-game/" class="github-link" target="_blank">View on GitHub Pages</a>
                                 <br>
-                                <a href="https://github.com/magnusgit1/quiz-game" class="github-link">View code on GitHub</a>
+                                <a href="https://github.com/magnusgit1/quiz-game" class="github-link" target="_blank">View code on GitHub</a>
                             </div>
                             <ul class="project-detail-list">
                                 <li class="detail-item"><strong>Technologies used:</strong> <br>
@@ -116,37 +118,14 @@
                                     allowing secure registration and login for users, with passwords encrypted in the database.
 
                                     This is my most recent project, and the leap from creating small HTML/CSS and Javascript-based websites, to an actual functional
-                                    application with login, register and game-logic was definetely challenging, but utilizing online resources 
+                                    application with login, register and game-logic was definetely challenging - but utilizing online resources 
                                     and docs helped tremendously.
                                     
                                     The application is now up and running through Github-pages (link above), with both the server-api's and database 
-                                    deployed externally using Render. NB: The app may be slow due to using Render's free services.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="project" onclick="toggleDetails(this)">
-                        <h4>Game Of Life</h4>
-                        <div class="project-details">
-                            <div class="project-header">
-                                <img src="./imgs/GUI.png" width="100%" style="padding:5px;" alt="Project Image" class="project-image">
-                                <a href="https://github.com/magnusgit1/game-of-life" class="github-link">View code on GitHub</a>
-                            </div>
-                            <ul class="project-detail-list">
-                                <li class="detail-item"><strong>Technologies used:</strong><br>
-                                    <ul style="padding:5px;">
-                                        <li>Java</li>
-                                    </ul>
-                                </li>
-                                <li class="detail-item"><strong>Time spent:</strong>approx. 3 days</li>
-                                <li class="detail-item" style="width:90%;"><strong>Description/Experience:</strong> <br> <br>
-                                    This Java program was coded during my 3rd semester at school related to a 
-                                    Object-oriented programming course. It consists of a simple game called Game of Life,
-                                    where nodes, represented as cells, are either dead or alive in the next "generation" 
-                                    depending on the number of alive neighbors. One of the programs
-                                    uses a GUI-implementation with visual representations, while the other interacts with the user 
-                                    and displays the game in the command-line - both using the same logic. This was a small milestone
-                                    for me in my Java-journey, where i started to understand all the concepts around OOP, classes and compilers.
+                                    deployed externally using Render. <br><br>
+                                    
+                                    NB: The app may be slow at its first data request during a session, due to using Render's free server-services. If you were to test out the application,
+                                    please be patient (1-2 minutes) during the first request (login, registration, leaderboard, game-page questions). After the first request, everything should thereafter run smoothly.
                                 </li>
                             </ul>
                         </div>
@@ -155,8 +134,8 @@
                         <h4>Search-Algorithms</h4>
                         <div class="project-details">
                             <div class="project-header">
-                                <img src="./imgs/quiz-game-img.png" width="100%" style="padding:5px;" alt="Project Image" class="project-image">
-                                <a href="https://github.com/magnusgit1/Search-Algorithms" class="github-link">View code on Github</a>
+                                <img src="./imgs/search-algos.png" width="100%" style="padding:5px;" alt="Project Image" class="project-image">
+                                <a href="https://github.com/magnusgit1/Search-Algorithms" class="github-link" target="_blank">View code on Github</a>
                             </div>
                             <ul class="project-detail-list">
                                 <li class="detail-item"><strong>Technologies used:</strong> <br>
@@ -177,20 +156,50 @@
                         </div>
                     </div>
                     <div class="project" onclick="toggleDetails(this)">
-                        <h4>Graph-algorithm</h4>
+                        <h4>Game Of Life</h4>
                         <div class="project-details">
                             <div class="project-header">
-                                <img src="./imgs/quiz-game-img.png" width="100%" style="padding:5px;" alt="Project Image" class="project-image">
-                                <a href="https://magnusgit1.github.io/quiz-game/" class="github-link">View on GitHub Pages</a>
+                                <img src="./imgs/GUI.png" width="100%" style="padding:5px;" alt="Project Image" class="project-image">
+                                <a href="https://github.com/magnusgit1/game-of-life" class="github-link" target="_blank">View code on GitHub</a>
+                            </div>
+                            <ul class="project-detail-list">
+                                <li class="detail-item"><strong>Technologies used:</strong><br>
+                                    <ul style="padding:5px;">
+                                        <li>Java</li>
+                                    </ul>
+                                </li>
+                                <li class="detail-item"><strong>Time spent: </strong> Approx. 3 days</li>
+                                <li class="detail-item" style="width:90%;"><strong>Description/Experience:</strong> <br> <br>
+                                    This Java program was coded during my 3rd semester at school related to a 
+                                    Object-oriented programming course. It consists of a simple game called Game of Life,
+                                    where nodes, represented as cells, are either dead or alive in the next "generation" 
+                                    depending on the number of alive neighbors. One of the programs
+                                    uses a GUI-implementation with visual representations, while the other interacts with the user 
+                                    and displays the game in the command-line - both using the same logic. This was a small milestone
+                                    for me in my Java-journey, where i started to understand all the concepts around OOP, classes and compilers.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project" onclick="toggleDetails(this)">
+                        <h4>Graph-based algorithm</h4>
+                        <div class="project-details">
+                            <div class="project-header">
+                                <img src="./imgs/graph.png" width="100%" style="padding:5px;" alt="Project Image" class="project-image">
+                                <a href="https://github.com/magnusgit1/Graph-algo" class="github-link" target="_blank">View code on GitHub</a>
                             </div>
                             <ul class="project-detail-list">
                                 <li class="detail-item"><strong>Technologies used:</strong> <br>
                                     <ul style="padding:5px;">
-                                        <li>FILL</li>
+                                        <li>Java</li>
                                     </ul>
                                 </li>
-                                <li class="detail-item"><strong>Time spent:</strong>FILL</li>
+                                <li class="detail-item"><strong>Time spent:</strong> Approx. 3 days</li>
                                 <li class="detail-item" style="width:90%;"><strong>Description/Experience:</strong> <br> <br>
+                                    Another project from a school-related course in Algorithms and Data-structures. The algorithm utilizes graph-theoretical principles to convert
+                                    logic into code where i used DFS, BFS, Djikstra and other algorithms to find connections among actors within the IMBD-database. 
+                                    The program creates a graph of Actors and Movies, represented as nodes, connected through edges, with weights equal to the movie-ratings. 
+                                    It then calculates different paths, such as the path with the highest rated movies between 2 actors.
                                 </li>
                             </ul>
                         </div>
@@ -230,7 +239,7 @@
 
     <footer id="footer">
         <p id="fp">Thanks for viewing my page!</p>
-        <a id="fa" href="https://github.com/magnusgit1">My GitHub</a>
+        <a id="fa" href="https://github.com/magnusgit1" target="_blank">My GitHub</a>
     </footer>
 
 
