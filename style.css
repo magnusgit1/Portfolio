@@ -328,3 +328,60 @@ footer {
 #fa:hover{
     color:white;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) { 
+    .profile_name {
+        font-size: 24px;
+        padding-left: 1cm;
+    }
+
+    .topdiv {
+        float: none;
+        text-align: center;
+    }
+
+    .topmenu {
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    #home {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .about-me-img, .about-me-text {
+        margin: 0 10px;
+        width: 100%;
+    }
+
+    .about-me-img {
+        margin-bottom: 20px;
+    }
+
+    .main-page-inner {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .all-skills, .all-projects {
+        flex-direction: column;
+    }
+    
+    .skill, .project {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
