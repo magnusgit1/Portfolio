@@ -27,9 +27,9 @@ hr{
     width:100%;
     
     --s: 201px; /* control the size*/
-    --c1: #1d1d1d;
-    --c2: #4e4f51;
-    --c3: #3c3c3c;
+    --c1: #232e3d;
+    --c2: #2f446f;
+    --c3: #0f1e3b;
     
     background:
         repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
