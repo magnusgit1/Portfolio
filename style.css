@@ -350,6 +350,7 @@ footer {
     #home {
         padding-top: 20px;
         padding-bottom: 20px;
+        height:2cm;
     }
     
     .container {
@@ -359,7 +360,7 @@ footer {
 
     .about-me-img, .about-me-text {
         margin: 0 10px;
-        width: 100%;
+        width: 70%;
     }
 
     .about-me-img {
