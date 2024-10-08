@@ -142,6 +142,8 @@ hr{
     width: 300px;
     margin-right:30px;  
     box-shadow: 1px 1px 20px black; 
+    border-radius:45%;
+    margin-top:-5px;
 }
 
 .container img{
@@ -271,8 +273,17 @@ h2 {
     margin-top:-20px;
 }
 
+button[type="submit"] {
+    width: 40%;
+    height:50px;
+    margin-top:-10px;
+}
+
 #comms{
     display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #message-area{
@@ -290,11 +301,6 @@ h2 {
 .user-input{
     display:block;
     width:100%;
-}
-button[type="submit"]{
-    margin-top:3cm;
-    height:3cm;
-    margin-left:5px;
 }
 
 #communication{
@@ -337,7 +343,7 @@ footer {
     }
 
     .topdiv {
-        float: none;
+        float: right;
         text-align: center;
     }
 
@@ -360,7 +366,9 @@ footer {
 
     .about-me-img, .about-me-text {
         margin: 0 10px;
-        width: 200px;
+        margin-right:60px;
+        margin-bottom:20px;
+        width: 90%;
     }
 
     .about-me-img {
@@ -382,7 +390,15 @@ footer {
     }
 
     button[type="submit"] {
-        width: 100%;
-        margin-top: 20px;
+        width: 40%;
+        height:50px;
+        margin-top:-10px;
+    }
+
+    #comms{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 }
